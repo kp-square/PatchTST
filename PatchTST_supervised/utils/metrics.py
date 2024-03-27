@@ -1,5 +1,7 @@
 import numpy as np
 
+epsilon = np.finfo(float).eps
+
 
 def RSE(pred, true):
     return np.sqrt(np.sum((true - pred) ** 2)) / np.sqrt(np.sum((true - true.mean()) ** 2))
@@ -31,6 +33,16 @@ def MAPE(pred, true):
 def MSPE(pred, true):
     return np.mean(np.square((pred - true) / true))
 
+def WAPE(y_pred, y):
+    """Weighted Average Percentage Error metric in the interval [0; 100]"""
+    nominator = np.sum(np.abs(np.subtract(y, y_pred)))
+    denominator = np.add(np.sum(np.abs(y)), epsilon)
+    wape = np.divide(nominator, denominator)*100.0
+    return wape
+
+def NSE(y_pred, y):
+    return (1-(np.sum((y_pred-y)**2)/np.sum((y-np.mean(y))**2)))
+
 
 def metric(pred, true):
     mae = MAE(pred, true)
@@ -40,5 +52,7 @@ def metric(pred, true):
     mspe = MSPE(pred, true)
     rse = RSE(pred, true)
     corr = CORR(pred, true)
+    wape = WAPE(pred, true)
+    nse = NSE(pred, true)
 
-    return mae, mse, rmse, mape, mspe, rse, corr
+    return mae, mse, rmse, mape, mspe, rse, corr, wape, nse

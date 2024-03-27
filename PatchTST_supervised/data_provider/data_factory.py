@@ -1,7 +1,10 @@
-from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_Pred
+from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_Pred, Dataset_Stream_Flow
 from torch.utils.data import DataLoader
 
 data_dict = {
+    'gaze_height': Dataset_Gaze_Height,
+    '1Hour': Dataset_Stream_Flow,
+    '3Hours': Dataset_Stream_Flow,
     'ETTh1': Dataset_ETT_hour,
     'ETTh2': Dataset_ETT_hour,
     'ETTm1': Dataset_ETT_minute,

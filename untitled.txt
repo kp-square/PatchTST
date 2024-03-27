@@ -1,0 +1,1 @@
+cp ~dev/Clemson/gra/gaze_height_CHATTAHOOCHEE_02336000.csv ~dev/PatchTST/PatchTST_supervised/dataset
