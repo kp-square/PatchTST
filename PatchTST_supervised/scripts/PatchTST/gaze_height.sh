@@ -16,7 +16,7 @@ data_name=gaze_height
 frequency=1h
 
 random_seed=2021
-for pred_len in 1
+for pred_len in 1 3 6 12
 do
     python -u run_longExp.py \
       --target 'gaze_height'\
@@ -27,22 +27,23 @@ do
       --model_id $model_id_name_$seq_len'_'$pred_len \
       --model $model_name \
       --data $data_name \
-      --features S \
+      --features M \
       --freq $frequency \
       --seq_len $seq_len \
       --label_len $label_len \
       --pred_len $pred_len \
       --enc_in 7 \
-      --e_layers 3 \
+      --e_layers 4 \
       --n_heads 4 \
       --d_model 16 \
       --d_ff 128 \
-      --dropout 0.3\
-      --fc_dropout 0.3\
+      --dropout 0.2\
+      --fc_dropout 0.2\
       --head_dropout 0\
-      --patch_len 16\
-      --stride 8\
+      --patch_len 8\
+      --stride 4\
       --des 'Exp' \
-      --train_epochs 100\
-      --itr 1 --batch_size 512 --learning_rate 0.0001 >logs/LongForecasting/$model_name'_'$model_id_name'_'$seq_len'_'$pred_len.log 
+      --train_epochs 40\
+      --embed 'fixed'\
+      --itr 1 --batch_size 512 --learning_rate 0.002 >logs/LongForecasting/$model_name'_'$model_id_name'_'$seq_len'_'$pred_len.log 
 done

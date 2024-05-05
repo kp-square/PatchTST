@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 class Dataset_Gaze_Height(Dataset):
     def __init__(self, root_path, flag='train', size=None, 
                  features='M', data_path='gaze_height_CHATTAHOOCHEE_02336000.csv',
-                 target='y', scale=True, timeenc=0, freq='1h'):
+                 target='gaze_height', scale=True, timeenc=0, freq='1h'):
         if size == None:
             self.seq_len = 24 * 4 * 4
             self.label_len = 24 * 4
@@ -39,8 +39,11 @@ class Dataset_Gaze_Height(Dataset):
 
     def __read_data__(self):
         self.scaler = StandardScaler()
-        df_raw = pd.read_csv(os.path.join(self.root_path,
-                                          self.data_path))
+
+        columns_to_read = ['DATE', 'DayOfYear', 'HourOfDay', self.target]
+        df_raw = pd.read_csv(os.path.join(self.root_path, self.data_path), usecols=columns_to_read)
+        
+        #df_raw = pd.read_csv(os.path.join(self.root_path, self.data_path))
 
         '''
         df_raw.columns: ['date', ...(other features), target feature]
@@ -92,6 +95,12 @@ class Dataset_Gaze_Height(Dataset):
         self.data_stamp = data_stamp
 
     def __getitem__(self, index):
+        '''
+            seq_x: array of horizon data, len: seq_len
+            seq_y: array of forecasts, len: label_len
+            seq_x_mark: 
+            seq_y_mark:
+        '''
         s_begin = index
         s_end = s_begin + self.seq_len
         r_begin = s_end - self.label_len
@@ -109,6 +118,7 @@ class Dataset_Gaze_Height(Dataset):
 
     def inverse_transform(self, data):
         return self.scaler.inverse_transform(data)
+
 
 
 class Dataset_Stream_Flow(Dataset):

@@ -123,6 +123,10 @@ class Exp_Main(Exp_Basic):
                                             epochs = self.args.train_epochs,
                                             max_lr = self.args.learning_rate)
 
+        param_count = sum(p.numel() for p in self.model.parameters())
+
+        print('parameter_count_test: ', param_count)
+        
         for epoch in range(self.args.train_epochs):
             iter_count = 0
             train_loss = []
@@ -229,8 +233,11 @@ class Exp_Main(Exp_Basic):
         folder_path = './test_results/' + setting + '/'
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
-
+        
         self.model.eval()
+        param_count = sum(p.numel() for p in self.model.parameters())
+
+        print('parameter_count_test: ', param_count)
         with torch.no_grad():
             for i, (batch_x, batch_y, batch_x_mark, batch_y_mark) in enumerate(test_loader):
                 batch_x = batch_x.float().to(self.device)
@@ -292,10 +299,28 @@ class Exp_Main(Exp_Basic):
         trues = trues.reshape(-1, trues.shape[-2], trues.shape[-1])
         inputx = inputx.reshape(-1, inputx.shape[-2], inputx.shape[-1])
 
+        predsf = preds.flatten()
+        truesf = trues.flatten()
+        
+        # Plotting
+        plt.figure(figsize=(10, 5))
+        plt.plot(truesf, label='True gauge height', color='red', linestyle='--', linewidth=2)
+        plt.plot(predsf, label='Predicted gauge height', color='blue', linewidth=2)
+        plt.title('PatchTST Prediction vs True graph')
+        plt.xlabel('Time Steps')
+        plt.ylabel('Values')
+        plt.legend()
+        
+        # Save the figure
+        
+
+
         # result save
         folder_path = './results/' + setting + '/'
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
+            
+        plt.savefig('PatchTSTfig2.png')  # Update the path as needed
 
         mae, mse, rmse, mape, mspe, rse, corr, wape, nse = metric(preds, trues)
         print('mse:{}, mae:{}, rse:{}, wape:{}, nse:{}'.format(mse, mae, rse, wape, nse))
