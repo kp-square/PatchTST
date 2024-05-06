@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from utils.timefeatures import time_features
 import warnings
 
-warnings.filterwarnings('ignore')
+#warnings.filterwarnings('ignore')
 
 class Dataset_Gaze_Height(Dataset):
     def __init__(self, root_path, flag='train', size=None, 
@@ -55,8 +55,8 @@ class Dataset_Gaze_Height(Dataset):
         cols.remove(self.target)
         cols.remove('date')
         df_raw = df_raw[['date'] + cols + [self.target]]
-        num_train = int(len(df_raw) * 0.7)
-        num_test = int(len(df_raw) * 0.2)
+        num_train = int(len(df_raw) * 0.9)
+        num_test = int((len(df_raw)-num_train) * 0.75)
         num_vali = len(df_raw) - num_train - num_test
         border1s = [0, num_train - self.seq_len, len(df_raw) - num_test - self.seq_len]
         border2s = [num_train, num_train + num_vali, len(df_raw)]

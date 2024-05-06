@@ -407,3 +407,84 @@ mse:0.01917203702032566, mae:0.04644567146897316, rse:0.14677724242210388, wape:
 gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
 mse:0.01917203702032566, mae:0.04644567146897316, rse:0.14677724242210388, wape:6.02915153393883, nse:0.9784564413130283
 
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.01917203702032566, mae:0.04644567146897316, rse:0.14677724242210388, wape:6.02915153393883, nse:0.9784564413130283
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.01917203702032566, mae:0.04644567146897316, rse:0.14677724242210388, wape:6.02915153393883, nse:0.9784564413130283
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.01917203702032566, mae:0.04644567146897316, rse:0.14677724242210388, wape:6.02915153393883, nse:0.9784564413130283
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.01917203702032566, mae:0.04644567146897316, rse:0.14677724242210388, wape:6.02915153393883, nse:0.9784564413130283
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.01882695034146309, mae:0.046259209513664246, rse:0.14264245331287384, wape:5.884424622104198, nse:0.9796531312167645
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.010047057643532753, mae:0.028919188305735588, rse:0.1091814935207367, wape:3.448423000145965, nse:0.9880794016644359
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.010047057643532753, mae:0.028919188305735588, rse:0.1091814935207367, wape:3.448423000145965, nse:0.9880794016644359
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl3_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.016451520845294, mae:0.042159341275691986, rse:0.13685818016529083, wape:5.471139276073171, nse:0.9812698382884264
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.04461784288287163, mae:0.0731915682554245, rse:0.2180873602628708, wape:9.178509982997422, nse:0.9524379000067711
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
+gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
+mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
+
