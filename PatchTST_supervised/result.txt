@@ -488,3 +488,184 @@ mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:
 gaze_height_PatchTST_gaze_height_ftM_sl24_ll0_pl6_dm16_nh4_el4_dl1_df128_fc1_ebtimeF_dtTrue_Exp_0  
 mse:0.03732313588261604, mae:0.06441798061132431, rse:0.20613521337509155, wape:8.35963408201705, nse:0.957508273422718
 
+24_1_PatchTST_gaze_height_ftM_sl24_ll12_pl1_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.008586067706346512, mae:0.04716487601399422, rse:0.09887191653251648, wape:6.120844250814631, nse:0.990224345587194
+
+24_3_PatchTST_gaze_height_ftM_sl24_ll12_pl3_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.018209971487522125, mae:0.05274321511387825, rse:0.14398668706417084, wape:6.844638741943074, nse:0.97926783002913
+
+24_6_PatchTST_gaze_height_ftM_sl24_ll12_pl6_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.0384644977748394, mae:0.072507344186306, rse:0.20926333963871002, wape:9.409405072664418, nse:0.9562088549137115
+
+24_12_PatchTST_gaze_height_ftM_sl24_ll12_pl12_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.07233086973428726, mae:0.10515260696411133, rse:0.28697773814201355, wape:13.647394019597792, nse:0.917643778026104
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.1692451685667038, mae:0.1680440604686737, rse:0.4408769905567169, wape:24.67378582686564, nse:0.8056274652481079
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.22820822894573212, mae:0.21549105644226074, rse:0.5119246244430542, wape:31.639433529322723, nse:0.7379331588745117
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.09408741444349289, mae:0.17045360803604126, rse:0.32656219601631165, wape:22.689239618505457, nse:0.893357127904892
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm16_nh4_el4_dl1_df128_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.1450686752796173, mae:0.2306613326072693, rse:0.4054761528968811, wape:30.702561587837724, nse:0.8355890810489655
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.17214402556419373, mae:0.1717018336057663, rse:0.44463667273521423, wape:25.21085286364994, nse:0.8022982180118561
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.22999799251556396, mae:0.21783874928951263, rse:0.5139281153678894, wape:31.98413341904888, nse:0.7358778715133667
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.17214402556419373, mae:0.1717018336057663, rse:0.44463667273521423, wape:25.21085286364994, nse:0.8022982180118561
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.22999799251556396, mae:0.21783874928951263, rse:0.5139281153678894, wape:31.98413341904888, nse:0.7358778715133667
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - including all
+mse:0.1692691296339035, mae:0.1681586056947708, rse:0.44090819358825684, wape:24.69060322251989, nse:0.8055999428033829
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - excluding precip and rh
+mse:0.10038617253303528, mae:0.1763148158788681, rse:0.34052443504333496, wape:23.936395675754056, nse:0.8840431123971939
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm16_nh8_el8_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - only gaze_height
+mse:0.011667484417557716, mae:0.05199870839715004, rse:0.13558650016784668, wape:8.970066920476484, nse:0.9816162995994091
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - gaze_height & Stationpressure
+mse:0.04637300968170166, mae:0.096258245408535, rse:0.23570142686367035, wape:13.773847246297377, nse:0.9444448426365852
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - everything except precip and windspeed
+mse:0.03699125722050667, mae:0.1081177219748497, rse:0.20723144710063934, wape:14.498748822742677, nse:0.9570551291108131
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - without windspeed
+mse:0.13311080634593964, mae:0.11764386296272278, rse:0.3953790068626404, wape:17.69771113220275, nse:0.843675434589386
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - without precipt, windspped and stationpressure
+mse:0.025686990469694138, mae:0.10379777103662491, rse:0.17692677676677704, wape:14.265213457310544, nse:0.9686969146132469
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with wetbulbtemp
+mse:0.011392648331820965, mae:0.06370331346988678, rse:0.12460258603096008, wape:9.509497505557581, nse:0.9844741960987449
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with drybulbtemp
+mse:0.015437024645507336, mae:0.07689222693443298, rse:0.14477692544460297, wape:11.598578170979119, nse:0.9790396448224783
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with relative humidity
+mse:0.03828313946723938, mae:0.12220031023025513, rse:0.21795174479484558, wape:17.404677724777677, nse:0.9524970352649689
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with Precip
+mse:0.3170933425426483, mae:0.11010231077671051, rse:0.6646968126296997, wape:26.2268464324524, nse:0.558178186416626
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - gaze_height only
+mse:0.01513247936964035, mae:0.06302356719970703, rse:0.1544126570224762, wape:10.87191617056786, nse:0.9761567320674658
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with Stationpressure
+mse:0.04637300968170166, mae:0.096258245408535, rse:0.23570142686367035, wape:13.773847246297377, nse:0.9444448426365852
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with windspeed
+mse:0.2058459371328354, mae:0.29145103693008423, rse:0.5036321878433228, wape:42.9017516953942, nse:0.7463545799255371
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - with drybulbtemp and wetbulbtemp
+mse:0.013235464692115784, mae:0.07448340952396393, rse:0.13124686479568481, wape:10.711990101840865, nse:0.9827742595225573
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.013235464692115784, mae:0.07448340952396393, rse:0.13124686479568481, wape:10.711990101840865, nse:0.9827742595225573
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.038790278136730194, mae:0.12357446551322937, rse:0.22466552257537842, wape:17.770845081774887, nse:0.9495254009962082
+
+24_6_PatchTST_gaze_height_full_ftM_sl24_ll12_pl6_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.07879728078842163, mae:0.17887462675571442, rse:0.3201479911804199, wape:25.719651332001064, nse:0.8975052684545517
+
+24_12_PatchTST_gaze_height_full_ftM_sl24_ll12_pl12_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.13623930513858795, mae:0.23988300561904907, rse:0.42084941267967224, wape:34.48453527695054, nse:0.8228857517242432
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.026189060881733894, mae:0.11279672384262085, rse:0.1846202164888382, wape:16.222101657560312, nse:0.9659153670072556
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.046431899070739746, mae:0.14502763748168945, rse:0.24580076336860657, wape:20.855956553091865, nse:0.9395819902420044
+
+24_6_PatchTST_gaze_height_full_ftM_sl24_ll12_pl6_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.08444086462259293, mae:0.19166973233222961, rse:0.33141449093818665, wape:27.559407178649437, nse:0.8901644349098206
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.013235464692115784, mae:0.07448340952396393, rse:0.13124686479568481, wape:10.711990101840865, nse:0.9827742595225573 - with both temp
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.038790278136730194, mae:0.12357446551322937, rse:0.22466552257537842, wape:17.770845081774887, nse:0.9495254009962082
+
+24_6_PatchTST_gaze_height_full_ftM_sl24_ll12_pl6_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.07879728078842163, mae:0.17887462675571442, rse:0.3201479911804199, wape:25.719651332001064, nse:0.8975052684545517
+
+24_12_PatchTST_gaze_height_full_ftM_sl24_ll12_pl12_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.13623930513858795, mae:0.23988300561904907, rse:0.42084941267967224, wape:34.48453527695054, nse:0.8228857517242432
+
+24_1_PatchTST_gaze_height_full_ftM_sl24_ll12_pl1_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.011392648331820965, mae:0.06370331346988678, rse:0.12460258603096008, wape:9.509497505557581, nse:0.9844741960987449 - with wet bulb temp
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.036448944360017776, mae:0.1104399636387825, rse:0.22285638749599457, wape:16.48561317473606, nse:0.9503350369632244
+
+24_6_PatchTST_gaze_height_full_ftM_sl24_ll12_pl6_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.07874888926744461, mae:0.1663552075624466, rse:0.3275248408317566, wape:24.82970785466171, nse:0.8927274718880653
+
+24_12_PatchTST_gaze_height_full_ftM_sl24_ll12_pl12_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.14679349958896637, mae:0.237789586186409, rse:0.4470764994621277, wape:35.486892159205794, nse:0.8001225888729095
+
+--- for various sequence lengths with label length 3 - data gaze height and wet bulb temperature --- 
+6_3_PatchTST_gaze_height_full_ftM_sl6_ll0_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.03845606744289398, mae:0.1101451888680458, rse:0.22891013324260712, wape:16.441610894343835, nse:0.9476001523435116
+
+6_3_PatchTST_gaze_height_full_ftM_sl6_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.03845606744289398, mae:0.1101451888680458, rse:0.22891013324260712, wape:16.441610894343835, nse:0.9476001523435116
+
+12_3_PatchTST_gaze_height_full_ftM_sl12_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.04013057425618172, mae:0.11339139938354492, rse:0.23384077847003937, wape:16.926180284968638, nse:0.9453184865415096
+
+18_3_PatchTST_gaze_height_full_ftM_sl18_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.03740151599049568, mae:0.1122375950217247, rse:0.22574970126152039, wape:16.753949207456518, nse:0.9490370713174343
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.036448944360017776, mae:0.1104399636387825, rse:0.22285638749599457, wape:16.48561317473606, nse:0.9503350369632244
+
+36_3_PatchTST_gaze_height_full_ftM_sl36_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.039402592927217484, mae:0.11674748361110687, rse:0.23171010613441467, wape:17.427150043421687, nse:0.9463104233145714
+
+48_3_PatchTST_gaze_height_full_ftM_sl48_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.03960077837109566, mae:0.11982595175504684, rse:0.23229211568832397, wape:17.886679948112814, nse:0.9460403770208359
+
+60_3_PatchTST_gaze_height_full_ftM_sl60_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.04034563526511192, mae:0.11960485577583313, rse:0.2344665378332138, wape:17.85367684216144, nse:0.9450254440307617
+
+72_3_PatchTST_gaze_height_full_ftM_sl72_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.042843788862228394, mae:0.1262497752904892, rse:0.24161645770072937, wape:18.84557739678445, nse:0.9416214823722839
+
+96_3_PatchTST_gaze_height_full_ftM_sl96_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.03896741941571236, mae:0.11690260469913483, rse:0.23042702674865723, wape:17.4503053921272, nse:0.9469033852219582
+
+144_3_PatchTST_gaze_height_full_ftM_sl144_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.04122421145439148, mae:0.12490272521972656, rse:0.23700568079948425, wape:18.64450087613777, nse:0.9438283033668995
+
+192_3_PatchTST_gaze_height_full_ftM_sl192_ll6_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - gz only
+mse:0.04468090832233429, mae:0.12564976513385773, rse:0.24674229323863983, wape:18.756013886900853, nse:0.9391182437539101
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - drybulbtemp
+mse:0.04688149690628052, mae:0.13312312960624695, rse:0.25227996706962585, wape:20.079672491881347, nse:0.9363548159599304
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - wetbulbtemp
+mse:0.036448944360017776, mae:0.1104399636387825, rse:0.22285638749599457, wape:16.48561317473606, nse:0.9503350369632244
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - precip
+mse:0.39290696382522583, mae:0.14552417397499084, rse:0.7399079203605652, wape:34.66614311283194, nse:0.4525362253189087
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - stationpressure
+mse:0.08083032071590424, mae:0.14968957006931305, rse:0.31119051575660706, wape:21.420809902471024, nse:0.9031604528427124
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  - rh
+mse:0.09916984289884567, mae:0.20181868970394135, rse:0.3507922887802124, wape:28.74534770929116, nse:0.876944787800312
+
+24_3_PatchTST_gaze_height_full_ftM_sl24_ll12_pl3_dm8_nh4_el4_dl1_df256_fc1_ebfixed_dtTrue_Exp_0  
+mse:0.2841619849205017, mae:0.34878215193748474, rse:0.5917130708694458, wape:51.34087773409015, nse:0.6498756408691406
+
