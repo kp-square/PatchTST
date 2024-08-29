@@ -1,7 +1,9 @@
-from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_Pred, Dataset_Stream_Flow, Dataset_Gaze_Height, Dataset_Gaze_Height_Full
+from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_Pred, Dataset_Stream_Flow, Dataset_Gaze_Height, Dataset_Gaze_Height_Full, Dataset_Gaze_Height_Mostafa_Socastee
 from torch.utils.data import DataLoader
 
 data_dict = {
+    'gaze_height_waycross': Dataset_Gaze_Height_Mostafa_Socastee,
+    'gaze_height_socastee': Dataset_Gaze_Height_Mostafa_Socastee,
     'gaze_height_full': Dataset_Gaze_Height_Full,
     'gaze_height': Dataset_Gaze_Height,
     '1Hour': Dataset_Stream_Flow,

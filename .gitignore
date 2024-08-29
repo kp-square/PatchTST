@@ -465,5 +465,5 @@ $RECYCLE.BIN/
 checkpoints/
 results/
 test_results/
-
+dataset/
 # End of https://www.toptal.com/developers/gitignore/api/emacs,jetbrains+all,jupyternotebooks,linux,macos,microsoftoffice,notepadpp,python,tortoisegit,vim,visualstudiocode,windows

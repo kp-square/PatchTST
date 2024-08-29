@@ -43,6 +43,80 @@ def WAPE(y_pred, y):
 def NSE(y_pred, y):
     return (1-(np.sum((y_pred-y)**2)/np.sum((y-np.mean(y))**2)))
 
+def PFE (y_pred, y):
+    return abs(y.max() - y_pred.max())/y.max()
+
+def TPE (y_pred, y):
+    return abs(np.argmax(y) - np.argmax(y_pred)) * 60
+
+def r_factor(y_pred, y):
+    """
+    Calculate the R-factor (reliability factor) for time series predictions.
+    
+    Parameters:
+    y_pred (numpy.array): Predicted values
+    y (numpy.array): Observed (true) values
+    
+    Returns:
+    float: R-factor value
+    """
+    if len(y_pred) != len(y):
+        raise ValueError("Predicted and observed arrays must have the same length")
+    
+    n = len(y)
+    numerator = np.sum((y_pred - y)**2)
+    denominator = np.sum((y - np.mean(y))**2)
+    
+    r_factor = np.sqrt(numerator / denominator)
+    
+    return r_factor
+
+def calculate_r_factor(y_pred, y):
+    # Calculate the standard deviation of observed values
+    std_dev_y = np.std(y)
+    
+    # Calculate the lower and upper bounds of the 95PPU band
+    lower_bound = np.percentile(y_pred, 2.5, axis=0)
+    upper_bound = np.percentile(y_pred, 97.5, axis=0)
+    
+    # Calculate the average width of the 95PPU band
+    average_width_95ppu = np.mean(upper_bound - lower_bound)
+    
+    # Calculate the R-Factor
+    r_factor = (average_width_95ppu / std_dev_y) * 100
+    
+    return r_factor
+
+
+def p_factor_95(y_pred, y, alpha=0.05):
+    """
+    Calculate the 95% p-factor for time series predictions.
+    
+    Parameters:
+    y_pred (numpy.array): Predicted values
+    y_obs (numpy.array): Observed (true) values
+    alpha (float): Significance level (default is 0.05 for 95% confidence)
+    
+    Returns:
+    float: 95% p-factor value (between 0 and 1)
+    """
+    if len(y_pred) != len(y):
+        raise ValueError("Predicted and observed arrays must have the same length")
+    
+    # Calculate prediction error
+    error = y_pred - y
+    
+    # Calculate the 95% confidence interval of the error
+    lower_bound = np.percentile(error, alpha/2 * 100)
+    upper_bound = np.percentile(error, (1 - alpha/2) * 100)
+    
+    # Count how many observed values fall within the 95% prediction interval
+    within_bounds = np.sum((error >= lower_bound) & (error <= upper_bound))
+    
+    # Calculate 95% p-factor
+    p_factor = within_bounds / len(y)
+    
+    return p_factor
 
 def metric(pred, true):
     mae = MAE(pred, true)
@@ -54,5 +128,9 @@ def metric(pred, true):
     corr = CORR(pred, true)
     wape = WAPE(pred, true)
     nse = NSE(pred, true)
+    pfe = PFE(pred, true)
+    tpe = TPE(pred, true)
+    rfactor = r_factor(pred, true)
+    pfactor95 = p_factor_95(pred, true)
 
-    return mae, mse, rmse, mape, mspe, rse, corr, wape, nse
+    return mae, mse, rmse, mape, mspe, rse, corr, wape, nse, pfe, tpe, rfactor, pfactor95

@@ -322,11 +322,11 @@ class Exp_Main(Exp_Basic):
             
         plt.savefig('PatchTSTfig2.png')  # Update the path as needed
 
-        mae, mse, rmse, mape, mspe, rse, corr, wape, nse = metric(preds, trues)
-        print('mse:{}, mae:{}, rse:{}, wape:{}, nse:{}'.format(mse, mae, rse, wape, nse))
+        mae, mse, rmse, mape, mspe, rse, corr, wape, nse, pfe, tpe, rfactor, pfactor95 = metric(preds, trues)
+        print('mse:{}, mae:{}, rse:{}, rmse:{}, wape:{}, nse:{}, pfe:{}, tpe:{}, rfactor:{}, pfactor95:{}'.format(mse, mae, rse, rmse, wape, nse, pfe, tpe, rfactor, pfactor95))
         f = open("result.txt", 'a')
         f.write(setting + "  \n")
-        f.write('mse:{}, mae:{}, rse:{}, wape:{}, nse:{}'.format(mse, mae, rse, wape, nse))
+        f.write('mse:{}, mae:{}, rse:{}, rmse:{}, wape:{}, nse:{}, pfe:{}, tpe:{}, rfactor:{}, pfactor95:{}'.format(mse, mae, rse, rmse, wape, nse, pfe, tpe, rfactor, pfactor95))
         f.write('\n')
         f.write('\n')
         f.close()
