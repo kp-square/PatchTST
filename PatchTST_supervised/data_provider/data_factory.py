@@ -1,5 +1,6 @@
 from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_Pred, Dataset_Stream_Flow, Dataset_Gaze_Height, Dataset_Gaze_Height_Full, Dataset_Gaze_Height_Mostafa_Socastee
 from torch.utils.data import DataLoader
+import sys
 
 data_dict = {
     'gaze_height_waycross': Dataset_Gaze_Height_Mostafa_Socastee,
@@ -17,6 +18,8 @@ data_dict = {
 
 
 def data_provider(args, flag):
+    print('woring..............')
+    sys.stdout.flush()
     Data = data_dict[args.data]
     timeenc = 0 if args.embed != 'timeF' else 1
 
@@ -45,7 +48,8 @@ def data_provider(args, flag):
         features=args.features,
         target=args.target,
         timeenc=timeenc,
-        freq=freq
+        freq=freq,
+        tempfeat=args.tempfeat
     )
     print(flag, len(data_set))
     data_loader = DataLoader(

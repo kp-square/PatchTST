@@ -14,6 +14,7 @@ class Dataset_Gaze_Height_Mostafa_Socastee(Dataset):
     def __init__(self, root_path, flag='train', size=None, 
                  features='M', data_path='SOCASTEE_02110725r1h.csv',
                  target='gaze_height', scale=True, timeenc=0, freq='1h'):
+        
         if size == None:
             self.seq_len = 24 * 4 * 4
             self.label_len = 24 * 4
@@ -63,8 +64,8 @@ class Dataset_Gaze_Height_Mostafa_Socastee(Dataset):
         cols.remove(self.target)
         cols.remove('date')
         df_raw = df_raw[['date'] + cols + [self.target]]
-        num_train = int(len(df_raw) * 0.83)
-        num_test = int((len(df_raw)-num_train) * 0.67)
+        num_train = int(len(df_raw) * 0.6)
+        num_test = int((len(df_raw)-num_train) * 0.75)
         num_vali = len(df_raw) - num_train - num_test
         border1s = [0, num_train - self.seq_len, len(df_raw) - num_test - self.seq_len]
         border2s = [num_train, num_train + num_vali, len(df_raw)]
@@ -131,7 +132,7 @@ class Dataset_Gaze_Height_Mostafa_Socastee(Dataset):
 class Dataset_Gaze_Height_Full(Dataset):
     def __init__(self, root_path, flag='train', size=None, 
                  features='M', data_path='chattahoochee_1hr_02336490.csv',
-                 target='gaze_height', scale=True, timeenc=0, freq='1h'):
+                 target='gaze_height', scale=True, timeenc=0, freq='1h', tempfeat=-1):
         if size == None:
             self.seq_len = 24 * 4 * 4
             self.label_len = 24 * 4
@@ -150,16 +151,29 @@ class Dataset_Gaze_Height_Full(Dataset):
         self.scale = scale
         self.timeenc = timeenc
         self.freq = freq
+        self.tempfeat = tempfeat
 
         self.root_path = root_path
         self.data_path = data_path
+        print('working.................')
         self.__read_data__()
 
     def __read_data__(self):
         self.scaler = StandardScaler()
 
+        ## modified code
         all_columns = ['DATE', self.target]
-        columns_to_read = ['DATE', 'DryBulbTemp', 'WetBulbTemp', 'Stationpressure',self.target]
+
+        if self.tempfeat > -2:
+            columns_to_read = ['DATE', self.target]
+            allcols = ['DryBulbTemp', 'WetBulbTemp', 'Precip', 'WindSpeed', 'RelHumidity', 'Stationpressure']
+            if self.tempfeat > -1:
+                columns_to_read = ['DATE', allcols[self.tempfeat], self.target]
+        else:
+            columns_to_read = ['DATE', 'DryBulbTemp', 'WetBulbTemp', 'Precip', 'Stationpressure', self.target]
+
+        ## modified code
+        
         df_raw = pd.read_csv(os.path.join(self.root_path, self.data_path), usecols=columns_to_read)
 
         from sklearn.preprocessing import MinMaxScaler
@@ -182,7 +196,7 @@ class Dataset_Gaze_Height_Full(Dataset):
         cols.remove('date')
         df_raw = df_raw[['date'] + cols + [self.target]]
         num_train = int(len(df_raw) * 0.9)
-        num_test = int((len(df_raw)-num_train) * 0.75)
+        num_test = int((len(df_raw) - num_train) * 0.75)
         num_vali = len(df_raw) - num_train - num_test
         border1s = [0, num_train - self.seq_len, len(df_raw) - num_test - self.seq_len]
         border2s = [num_train, num_train + num_vali, len(df_raw)]
@@ -194,7 +208,7 @@ class Dataset_Gaze_Height_Full(Dataset):
             df_data = df_raw[cols_data]
         elif self.features == 'S':
             df_data = df_raw[[self.target]]
-
+        self.scale = False
         if self.scale:
             train_data = df_data[border1s[0]:border2s[0]]
             self.scaler.fit(train_data.values)
@@ -206,6 +220,9 @@ class Dataset_Gaze_Height_Full(Dataset):
 
         df_stamp = df_raw[['date']][border1:border2]
         df_stamp['date'] = pd.to_datetime(df_stamp.date)
+        self.start_date = df_stamp.iloc[0]['date']
+        self.end_date = df_stamp.iloc[-1]['date']
+        print(self.start_date, self.end_date)
         if self.timeenc == 0:
             df_stamp['month'] = df_stamp.date.apply(lambda row: row.month, 1)
             df_stamp['day'] = df_stamp.date.apply(lambda row: row.day, 1)

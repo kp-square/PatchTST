@@ -5,12 +5,12 @@ fi
 if [ ! -d "./logs/LongForecasting" ]; then
     mkdir ./logs/LongForecasting
 fi
-seq_len=24
+seq_len=96
 label_len=0
 model_name=PatchTST
 
 root_path_name=./dataset/
-data_path_name=WAYCROSS_02226500r1h.csv
+data_path_name=WAYCROSS_02226500r15m.csv
 model_id_name=gaze_height_waycross
 data_name=gaze_height_waycross
 frequency=1h

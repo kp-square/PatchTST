@@ -10,7 +10,7 @@ label_len=0
 model_name=PatchTST
 
 root_path_name=./dataset/
-data_path_name=SOCASTEE_02110725r1h.csv
+data_path_name=SOCASTEE_02110725r15m.csv
 model_id_name=gaze_height_socastee
 data_name=gaze_height_socastee
 frequency=1h
